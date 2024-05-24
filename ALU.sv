@@ -17,3 +17,4 @@ always@(ALU_control, data1, data2) begin
 		default :Zero <= 0; ALU_result <= 0;
 	endcase
 end
+endmodule
