@@ -1,4 +1,4 @@
-module regfile(clk, rst_n, RegWrite, rs1, rs2, rd, wr_data, rd_data1, rd_data2);
+module RegFile(clk, rst_n, RegWrite, rs1, rs2, rd, wr_data, rd_data1, rd_data2);
 	input logic clk, rst_n, RegWrite;
 	input logic [4:0] rs1, rs2, rd;
 	input [31:0] wr_data;
