@@ -8,7 +8,7 @@ module pc(clk, rst_n, pc_in, pc_out);
 		else
 		pc_out <= pc_in;
 	end
-endmodule :
+endmodule : pc
 
 module pc_plus4(from_pc, next_pc);
 	input logic [31:0] from_pc;
