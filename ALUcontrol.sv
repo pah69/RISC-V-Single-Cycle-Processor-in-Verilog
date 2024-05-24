@@ -16,3 +16,4 @@ module ALUcontrol(ALUOp, func7, func3, ALUcontrol_out);
 	endcase
 		end
 	end
+endmodule
