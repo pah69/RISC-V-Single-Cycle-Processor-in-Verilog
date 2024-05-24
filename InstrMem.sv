@@ -3,7 +3,7 @@ module InstrMem(
 	input logic [31:0] addr;
 	output logic [31:0] instr;
 );
-reg [31:0] addr_iMem [0:31];
+	reg [31:0] addr_imem [0:31];
 integer i;
 
 assign instr = addr[addr_iMem];
