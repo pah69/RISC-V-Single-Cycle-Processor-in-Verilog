@@ -12,7 +12,7 @@ module decoder(command, ALUcontrol_out);
 		11'b01100110011: ALUcontrol_out = 4'b0001; // OR
 		11'b?0000010011: ALUcontrol_out = 4'b1010; // ADDI
 		11'b?1110010011: ALUcontrol_out = 4'b1000; // ANDI
-		11'b?1100010011: ALUcontrol_out = 4'b1001; // ADDI
+		11'b?1100010011: ALUcontrol_out = 4'b1001; // ORI
 		default : ALUcontrol_out = 4'b0000;
 	endcase
 endmodule

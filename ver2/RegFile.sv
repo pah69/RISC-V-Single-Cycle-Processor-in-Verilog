@@ -1,8 +1,8 @@
-module RegFile(clk, rst_n, RegWrite, rs1, rs2, rd, wr_data, rd_data1, rd_data2);
+module RegFile(clk, rst_n, RegWrite, rs1, rs2, rd, wr_data, rs1_data, rs2_data);
 	input logic clk, rst_n, RegWrite;
 	input logic [4:0] rs1, rs2, rd;
 	input logic [31:0] wr_data;
-	output logic [31:0] rd_data1, rd_data2;
+	output logic [31:0] rs1_data, rs2_data;
 
 	reg [31:0] registers [31:0];
 
@@ -20,8 +20,8 @@ module RegFile(clk, rst_n, RegWrite, rs1, rs2, rd, wr_data, rd_data1, rd_data2);
 
 	always_comb
 	begin
-		rd_data1 = registers[rs1];
-		rd_data2 = registers[rs2];
+		rs1_data = registers[rs1];
+		rs2_data = registers[rs2];
 	end
 
 endmodule
